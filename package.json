@@ -7,7 +7,7 @@
   },
   "scripts": {
     "test": "gulp test",
-    "postinstall": "gulp default"
+    "postinstall": "gulp build"
   },
   "devDependencies": {
     "gulp": "~3.9.0",
