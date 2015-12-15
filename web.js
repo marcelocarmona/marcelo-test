@@ -1,10 +1,17 @@
+'use strict';
+
   var gzippo = require('gzippo');
   var express = require('express');
   var app = express();
+  // var gulp = require('gulp');
+
+// require('./gulp/build.js');
+//   gulp.start('build');
+
 
   // app.use(express.logger('dev'));
 
-process.env.PWD = process.cwd();
+  process.env.PWD = process.cwd();
 
 
   // app.use(express.static(__dirname + "/dist"));

@@ -6,7 +6,8 @@
     "gzippo": "^0.2.0"
   },
   "scripts": {
-    "test": "gulp test"
+    "test": "gulp test",
+    "postinstall": "gulp default"
   },
   "devDependencies": {
     "gulp": "~3.9.0",
@@ -53,7 +54,6 @@
     "wrench": "~1.5.8"
   },
   "engines": {
-    "node": ">=0.10.0",
-    "npm": "2.12.1"
+    "node": ">=0.10.0"
   }
 }
