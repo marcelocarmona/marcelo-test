@@ -6,8 +6,7 @@
     "gzippo": "^0.2.0"
   },
   "scripts": {
-    "test": "gulp test",
-    "postinstall": "gulp build"
+    "test": "gulp test"
   },
   "devDependencies": {
     "gulp": "~3.9.0",
