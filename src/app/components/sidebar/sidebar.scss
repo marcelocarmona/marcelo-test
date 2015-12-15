@@ -1,0 +1,110 @@
+.sidebar {
+  background: #393939;
+  // position: fixed;
+  // top: 0;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  // list-style: none;
+  height: 100%;
+
+  & .sidebar-container {
+      // border-left: 1px solid red;
+        border-left: 1px solid #333333;
+        height: 100%;
+  margin-left: 50px;
+  }
+
+  & a {
+    color: #bdbdbd;
+    width: 100%;
+  }
+
+  & a:hover,
+  & a:focus {
+    color: #9c8e6b;
+    text-decoration: none;
+    background-color: transparent;
+  }
+}
+
+
+
+.sidebar ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  // position: absolute;
+  // top: 0;
+  // width: 250px;
+  // height: auto;
+}
+
+.sidebar li {
+  line-height: 30px;
+  // text-indent: 20px;
+  // height: 40px;
+
+}
+
+.sidebar > .sidebar-container > ul > li {
+  // border-left: 1px solid red;
+  // border-left: 1px solid #333333;
+  // margin-left: 50px;
+  padding: 0 20px;
+
+  & ul > li {
+    color: #bdbdbd;
+    font-size: 13px;
+    padding-left: 10px;
+    list-style: initial;
+    list-style-position: inside;
+  }
+}
+
+.sidebar .icon {
+  margin-left: -60px;
+  padding-right: 36px;
+  font-size: 20px;
+  // width: 44px;
+  color:#4f4f4f;
+
+  &:hover,
+  &:focus {
+    color: #9c8e6b;
+    text-decoration: none;
+    background-color: transparent;
+  }
+}
+
+.sidebar .icon-notification{
+  color: black;
+}
+
+.sidebar .logo {
+  color: #fff;
+  font-size: 35px;
+  height: 100px;
+  transform: rotate(-90deg);
+  transform-origin: 10px 66px;
+}
+
+.sidebar .badge-notification {
+  font-size: 10px;
+  background-color: red;
+  float: right;
+  top: -7px;
+  left: 13px;
+  position: absolute;
+  height: 15px;
+  width: 15px;
+  line-height: 13px;
+  border-radius: 50%;
+  color: #fff;
+  text-align: center;
+  font-weight: bold;
+}
+
+.sidebar .space {
+  margin: 25px 0;
+}

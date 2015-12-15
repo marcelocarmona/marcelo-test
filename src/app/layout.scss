@@ -1,0 +1,31 @@
+#wrapper {
+  // padding-left: 250px;
+  // display: table;
+  width: 100%;
+  height: 100%;
+}
+
+#sidebar-wrapper {
+  // z-index: 1000;
+  position: fixed;
+  // left: 250px;
+  width: 250px;
+  height: 100%;
+  vertical-align: top;
+  // margin-left: -250px;
+  overflow-y: auto;
+
+  // display: inline-block;
+  background: red;
+    // background: #393939;
+
+}
+
+#page-content-wrapper {
+    width: 100%;
+    // position: absolute;
+    padding: 0 0 0 250px;
+    display: inline-block;
+    height: 100%;
+    vertical-align: top;
+}

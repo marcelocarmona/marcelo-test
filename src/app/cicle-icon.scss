@@ -1,0 +1,157 @@
+//== Colors
+
+$color-ca: #78b88d; // green
+$color-fa: #6072e9; // blue
+$color-mo: #d44;    // red
+$color-sv: #e5c332; // yellow
+$color-gc: #828b8c; // gray
+$color-u:  #8b59b2; // purple
+$color-cf: #86cceb; // light-blue
+$color-sk: #de9b2b; // orange
+$color-g:  #cdb885; // brown
+
+$color-background-font: #fff;  // white
+
+
+.cicle-icon {
+  border: 2px solid;
+  border-radius: 50%;
+  display: inline-block;
+  height: 40px;
+  line-height: 40px;
+  margin: 0 4px;
+  text-align: center;
+  width: 40px;
+}
+
+// Alternate cicle icons
+// --------------------------------------------------
+
+.cicle-icon-ca {
+  border-color: $color-ca;
+  color: $color-ca;
+
+  &:before {
+    content: 'CA';
+  }
+}
+
+.cicle-icon-fa {
+  border-color: $color-fa;
+  color: $color-fa;
+
+  &:before {
+    content: 'FA';
+  }
+}
+
+.cicle-icon-mo {
+  border-color: $color-mo;
+  color: $color-mo;
+
+  &:before {
+    content: 'MO';
+  }
+}
+
+.cicle-icon-sv {
+  border-color: $color-sv;
+  color: $color-sv;
+
+  &:before {
+    content: 'SV';
+  }
+}
+
+.cicle-icon-gc {
+  border-color: $color-gc;
+  color: $color-gc;
+
+  &:before {
+    content: 'GC';
+  }
+}
+
+.cicle-icon-u {
+  border-color: $color-u;
+  color: $color-u;
+
+  &:before {
+    content: 'U';
+  }
+}
+
+.cicle-icon-cf {
+  border-color: $color-cf;
+  color: $color-cf;
+
+  &:before {
+    content: 'CF';
+  }
+}
+
+.cicle-icon-sk {
+  border-color: $color-sk;
+  color: $color-sk;
+
+  &:before {
+    content: 'SK';
+  }
+}
+
+.cicle-icon-g {
+  border-color: $color-g;
+  color: $color-g;
+
+  &:before {
+    content: 'G';
+  }
+}
+
+// Alternate cicle icons background
+// --------------------------------------------------
+
+.cicle-icon-ca-background {
+  background: $color-ca;
+  color: $color-background-font;
+}
+
+.cicle-icon-fa-background {
+  background: $color-fa;
+  color: $color-background-font;
+}
+
+.cicle-icon-mo-background {
+  background: $color-mo;
+  color: $color-background-font;
+}
+
+.cicle-icon-sv-background {
+  background: $color-sv;
+  color: $color-background-font;
+}
+
+.cicle-icon-gc-background {
+  background: $color-gc;
+  color: $color-background-font;
+}
+
+.cicle-icon-u-background {
+  background: $color-u;
+  color: $color-background-font;
+}
+
+.cicle-icon-cf-background {
+  background: $color-cf;
+  color: $color-background-font;
+}
+
+.cicle-icon-sk-background {
+  background: $color-sk;
+  color: $color-background-font;
+}
+
+.cicle-icon-g-background {
+  background: $color-g;
+  color: $color-background-font;
+}
