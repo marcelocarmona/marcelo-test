@@ -8,4 +8,9 @@
     var host = server.address().address;
   var port = server.address().port;
 
+
+   app.get('/hola', function(request, response) {
+     response.send('Hello World!');
+    });
+
   console.log('Escuchando desde http://%s:%s', host, port);
