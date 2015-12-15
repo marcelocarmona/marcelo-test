@@ -10,7 +10,7 @@
 
 
    app.get('/hola', function(request, response) {
-     response.send('Hello World!');
+     response.send('Escuchando desde http://'+host+':'+port);
     });
 
   console.log('Escuchando desde http://%s:%s', host, port);
