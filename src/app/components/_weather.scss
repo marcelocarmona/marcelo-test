@@ -4,10 +4,10 @@
 $weather-icon-color: #f6e338;
 
 .weather {
-  @include make-sm-column(6);
+  // @include make-sm-column(6);
 
   .weather-container {
-    float: right;
+    // float: right;
     overflow: hidden;
     zoom: 1;
   }
@@ -52,6 +52,34 @@ $weather-icon-color: #f6e338;
     }
   }
 }
+
+@media(max-width: $screen-sm-min){
+  .weather {
+    @include make-sm-column(12);
+    margin: 20px auto;
+    width: 80%;
+
+    .weather-container {
+      margin: 20px auto;
+      width: 80%;
+    }
+
+    .climate,
+    .date {
+      display: none;
+    }
+  }
+}
+
+@media(min-width: $screen-sm-min){
+  .weather {
+    @include make-sm-column(6);
+  }
+  .weather-container {
+    float: right;
+  }
+}
+
 
 // spin for icons
 // --------------------------------------------------

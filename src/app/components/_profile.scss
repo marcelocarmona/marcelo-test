@@ -5,7 +5,7 @@ $online-color: #7bce49;
 $profile-img-border-color: #6373ce;
 
 .profile {
-  @include make-sm-column(6);
+  // @include make-sm-column(6);
 
   .profile-container {
     overflow: hidden;
@@ -28,7 +28,7 @@ $profile-img-border-color: #6373ce;
       background: $online-color;
       border: 3px solid rgb(255, 255, 255);
       border-radius: 50%;
-      display: inline-block;
+      // display: inline-block;
       float: right;
       height: 20px;
       left: 110px;
@@ -64,5 +64,32 @@ $profile-img-border-color: #6373ce;
       text-align: center;
       width: 30px;
     }
+  }
+}
+
+@media(max-width: $screen-sm-min){
+  .profile {
+    @include make-sm-column(12);
+    margin: 0 auto;
+    width: 80%;
+
+    .profile-container {
+      margin: 0 auto;
+      width: 80%;
+
+      .online {
+        display: none;
+      }
+    }
+  }
+}
+
+@media(min-width: $screen-sm-min){
+  .profile {
+    @include make-sm-column(6);
+
+      .online {
+        display: inline-block;
+      }
   }
 }

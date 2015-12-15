@@ -18,7 +18,23 @@
 #page-content-wrapper {
   display: inline-block;
   height: 100%;
-  padding: 0 0 0 250px;
+  // padding: 0 0 0 250px;
   vertical-align: top;
   width: 100%;
+}
+
+@media(max-width: $screen-sm-min){
+  #sidebar-wrapper {
+    display: none;
+  }
+
+  #page-content-wrapper {
+    padding: 0;
+  }
+}
+
+@media(min-width: $screen-sm-min){
+  #page-content-wrapper {
+    padding-left: 250px;
+  }
 }

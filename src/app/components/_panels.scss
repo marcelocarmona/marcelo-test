@@ -93,6 +93,15 @@ $panel-body-title-color: #a7a7a7;
   }
 }
 
+@media(max-width: $screen-sm-min){
+    .panel-item-table {
+      display: none;
+    }
+    .panel-body-title {
+      display: none;
+    }
+}
+
 
 // btn-custom
 // --------------------------------------------------
