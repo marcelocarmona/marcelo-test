@@ -11,12 +11,12 @@
 
   // app.use(express.logger('dev'));
 
-  process.env.PWD = process.cwd();
+  // process.env.PWD = process.cwd();
 
 
-  // app.use(express.static(__dirname + "/dist"));
+  app.use(express.static(__dirname + "/dist"));
   //
-  app.use(express.static(process.env.PWD + '/dist'));
+  // app.use(express.static(process.env.PWD + '/dist'));
 
   var server = app.listen(process.env.PORT || 5000);
     var host = server.address().address;
