@@ -1,0 +1,71 @@
+// Weather
+// --------------------------------------------------
+
+$weather-icon-color: #f6e338;
+
+.weather {
+  @include make-sm-column(6);
+
+  .weather-container {
+    float: right;
+    overflow: hidden;
+    zoom: 1;
+  }
+
+  .date {
+    display: table-cell;
+    padding-left: 20px;
+    text-align: center;
+    vertical-align: middle;
+
+    .day,
+    .month-year {
+      display: block;
+      font-size: 22px;
+    }
+
+    .day-number {
+      display: block;
+      font-family: LatoWebLight;
+      font-size: 60px;
+      line-height: 57px;
+    }
+  }
+
+  .climate {
+    display: table-cell;
+    padding-left: 20px;
+    vertical-align: middle;
+
+    .weather-icon {
+      color: $weather-icon-color;
+      display: inline-block;
+      font-size: 50px;
+      text-shadow: 3px 1px 3px rgba(0, 0, 0, .8);
+    }
+
+    .grades {
+      display: inline-block;
+      font-family: LatoWebLight;
+      font-size: 35px;
+      vertical-align: top;
+    }
+  }
+}
+
+// spin for icons
+// --------------------------------------------------
+
+.spin {
+  animation: spin 100005ms infinite linear;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(359deg);
+  }
+}

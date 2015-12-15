@@ -1,0 +1,107 @@
+// Header
+// --------------------------------------------------
+
+$header-color: #4f4f4f;
+
+.header {
+  color: $header-color;
+  font-size: 19px;
+  padding-left: 60px;
+}
+
+// panel-custom
+// --------------------------------------------------
+
+$panel-custom-background-color: #e4e4e4;
+$panel-item-background-color: #fff;
+$panel-item-border-color: #ddd;
+$table-thead-color: #bfbfbf;
+$panel-body-title-color: #a7a7a7;
+
+.panel-container {
+  padding: 0 35px;
+
+  .panel-body-title {
+    color: $panel-body-title-color;
+    padding: 0 25px 5px;
+  }
+}
+
+.panel-custom {
+  background-color: $panel-custom-background-color;
+  border-left: 7px solid $header-color;
+  border-radius: 8px;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, .05);
+  margin-bottom: 25px;
+
+  .panel-custom-heading {
+    padding: 5px 15px;
+  }
+}
+
+.panel-item {
+  background-color: $panel-item-background-color;
+  border-radius: 8px;
+  margin-bottom: 15px;
+
+  .panel-item-heading {
+    @include make-row();
+    border-bottom: 1px solid transparent;
+    border-color: $panel-item-border-color;
+    line-height: 40px;
+    margin: 0;
+    padding: 15px 25px;
+
+    .client {
+      @include make-sm-column(3);
+      font-weight: bold;
+      padding-left: 0;
+    }
+
+    .alerts {
+      @include make-sm-column(8);
+      padding-right: 0;
+      text-align: right;
+    }
+
+    .management {
+      @include make-sm-column(1);
+      padding-right: 0;
+      text-align: right;
+    }
+  }
+
+  .panel-item-body {
+    padding: 15px 25px;
+
+    .panel-item-table {
+      border-collapse: collapse;
+      border-spacing: 0;
+      max-width: 80%;
+      table-layout: fixed;
+      width: 80%;
+    }
+  }
+
+  .panel-item-footer {
+    padding: 15px 25px;
+    text-align: right;
+  }
+
+  table thead {
+    color: $table-thead-color;
+  }
+}
+
+
+// btn-custom
+// --------------------------------------------------
+
+$btn-custom-color: #fff;
+$btn-custom-background: #c6b786;
+$btn-custom-border: #c6b786;
+
+.btn-custom {
+  @include button-variant($btn-custom-color, $btn-custom-background, $btn-custom-border);
+  padding: 8px 50px;
+}

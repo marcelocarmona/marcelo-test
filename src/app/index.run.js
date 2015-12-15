@@ -6,8 +6,7 @@
     .run(runBlock);
 
   /** @ngInject */
-  function runBlock($log) {
-
+  function runBlock($log, $timeout) {
     $log.debug('runBlock end');
   }
 

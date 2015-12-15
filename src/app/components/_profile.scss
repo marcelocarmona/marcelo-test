@@ -1,0 +1,68 @@
+// Profile
+// --------------------------------------------------
+
+$online-color: #7bce49;
+$profile-img-border-color: #6373ce;
+
+.profile {
+  @include make-sm-column(6);
+
+  .profile-container {
+    overflow: hidden;
+    zoom: 1;
+  }
+
+  .profile-img {
+    display: table-cell;
+    vertical-align: top;
+
+    img {
+      border: 5px solid $profile-img-border-color;
+      border-radius: 50%;
+      display: block;
+      height: 135px;
+      width: 135px;
+    }
+
+    .online {
+      background: $online-color;
+      border: 3px solid rgb(255, 255, 255);
+      border-radius: 50%;
+      display: inline-block;
+      float: right;
+      height: 20px;
+      left: 110px;
+      line-height: 26px;
+      position: absolute;
+      text-align: center;
+      top: 110px;
+      width: 20px;
+    }
+  }
+
+  .profile-content {
+    display: table-cell;
+    padding-left: 20px;
+    vertical-align: middle;
+
+    .name {
+      display: block;
+      font-size: 22px;
+    }
+
+    .info {
+      display: block;
+      font-size: 16px;
+    }
+
+    .circle-email {
+      border: 2px solid rgba(255, 255, 255, .3);
+      border-radius: 50%;
+      display: inline-block;
+      height: 30px;
+      line-height: 26px;
+      text-align: center;
+      width: 30px;
+    }
+  }
+}

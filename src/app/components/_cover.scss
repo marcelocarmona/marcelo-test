@@ -1,0 +1,26 @@
+// Cover
+// --------------------------------------------------
+
+$cover-font-color: #fff;
+
+.cover {
+  background-image: url('../assets/images/cielo.jpg');
+}
+
+.cover-container {
+  @include make-row();
+  color: $cover-font-color;
+  margin: 0;
+  min-height: 300px;
+  padding: 40px;
+  text-shadow: 1px 1px 0 rgba(0, 0, 0, .8);
+}
+
+// Gradient
+// --------------------------------------------------
+.gradient {
+  background: linear-gradient(rgba(255, 255, 255, .0) 0%, white 90%);
+  padding: 75px;
+  position: relative;
+  top: -150px;
+}
