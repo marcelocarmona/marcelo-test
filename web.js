@@ -4,4 +4,8 @@
 
   // app.use(express.logger('dev'));
   app.use(express.static(__dirname + "/dist"));
-  app.listen(process.env.PORT || 5000);
+  var server = app.listen(process.env.PORT || 5000);
+    var host = server.address().address;
+  var port = server.address().port;
+
+  console.log('Escuchando desde http://%s:%s', host, port);
